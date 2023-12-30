@@ -1,0 +1,241 @@
+/* Reset Margins and Paddings */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica;
+
+}
+
+h2{
+    font-size: 30px;
+}
+
+p{
+    font-size: 20px;
+}
+
+/* Media Query for 2560px */
+@media screen and (min-width: 2560px) {
+    .first_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .first_section .colorWorksText {
+        /* margin-left: -600px; */
+        display: flex;
+        flex-direction: column;
+        max-width: 30%;      
+        margin-left: -650px;
+    }
+}
+
+.first_section {
+    background-image: url(OneDrive_1_12-27-2023/case-studies-hero.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 550px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: left;
+    /* text-align: center; */
+}
+
+.first_section .colorWorksText {
+    width: 50%;
+    padding-bottom: 50px;
+    padding-left: 50px;
+}
+
+.first_section .colorWorksText h2{
+    font-weight: 600;
+}
+
+.second {
+    background: linear-gradient(0deg, rgba(23,13,116,1) 0%, rgba(18,36,226,1) 100%);
+}
+
+.second_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 83%;
+    margin: auto;
+}
+
+.second_section h2 {
+    text-align: center;
+    color: #FFF;
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.second_section img {
+    max-width: 60%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.second_section .colorWorkImpact{
+    margin-top: 90px;
+}
+
+/* multiple tabs */
+
+.multiple_tabs {
+    margin-bottom: 50px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: rgb(31, 157, 189) !important;
+    border-radius: 0px;
+}
+
+li.nav-item {
+    border-right: 1px solid #FFF;
+    background-color: #000;
+}
+
+li.nav-item.retail {
+    border-right: none;
+}
+.nav-pills .nav-link {
+    color: #FFF;
+}
+
+ul#pills-tab {
+    display: flex;
+    justify-content: center;
+}
+
+button.carousel-control-next {
+    justify-content: space-between;
+    width: auto;
+    right: -70px;
+}
+
+button.carousel-control-prev{
+    justify-content: space-between;
+    width: auto;
+    left: -70px;
+}
+
+/* Slider */
+.card{
+    --bs-card-border-radius: 0px !important;
+    padding: 10px;
+}
+
+.col-md-4 .card .card-title, .col-md-12 .card .card-title{
+    font-family: 'Helvetica Neue', Helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(30, 85, 173);
+    margin-top: 10px;
+}
+
+.col-md-4 .card .card-text, .col-md-12 .card .card-text{
+    font-size: 15px;
+    font-family: 'Helvetica Neue', Helvetica;
+    color: #000;
+}
+
+/* mobile slider */
+.carousel-inner.mobile_carousel {
+    display: none;
+}
+
+/* third_section */
+.third_section{
+    background: linear-gradient(0deg, rgba(193,206,212,1) 0%, rgba(16,155,221,1) 100%);
+    text-align: center;
+}
+
+iframe.gfiframe {
+    background-color: #FFF;
+    padding: 50px;
+    border-radius: 5px;
+    width: 700px;
+}
+
+.enquire_form {
+    /* width: 50%; */
+    margin: auto;
+}
+
+
+
+
+
+
+/* .third_section{
+    margin-top: 90px;
+} */
+
+@media only screen and (max-width: 767px) {
+
+    h2{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    .first_section {
+        height: auto;
+        background-size: cover !important;
+        /* display: inline-block;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; */
+    }
+
+    .second_section img{
+        max-width: 110% !important;
+    }
+
+    .first_section .colorWorksText {
+        width: 70%;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: end; */
+        padding-left: 10px;
+        padding-bottom: 0px;
+        padding-top: 250px;
+        
+    }
+
+    .first_section .colorWorksText h2{
+        /* padding-top: 250px; */
+        /* margin-top: 250px; */
+    }
+
+    button.carousel-control-next{
+        right: -37px !important;
+    }
+
+    button.carousel-control-prev{
+        left: -37px !important;
+    }
+
+    .carousel-inner.mobile_carousel {
+        display: block;
+    }
+
+    .carousel-inner.desktop_carousel {
+        display: none;
+    }
+
+    iframe.gfiframe{
+        width: auto !important;
+    }
+
+
+}
