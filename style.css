@@ -154,6 +154,8 @@ button.carousel-control-prev{
 .third_section{
     background: linear-gradient(0deg, rgba(193,206,212,1) 0%, rgba(16,155,221,1) 100%);
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 iframe.gfiframe {
